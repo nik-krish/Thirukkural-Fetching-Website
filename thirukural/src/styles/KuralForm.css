@@ -1,0 +1,57 @@
+.kuralForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.kuralInput {
+  font-size: 1.5rem;
+  padding: 12px;
+  width: 320px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid #007bff; /* Border color updated */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for a premium feel */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kuralInput:focus {
+  border-color: #28a745; /* Green border when focused */
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3); /* Green shadow effect */
+  outline: none; /* Removes default focus outline */
+}
+
+.kuralButton {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+.kuralButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.kuralButton:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+@media (max-width: 768px) {
+  .kuralInput {
+    font-size: 1.3rem;
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .kuralButton {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+}

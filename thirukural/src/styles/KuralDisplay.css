@@ -1,0 +1,95 @@
+.kural-display {
+  margin-top: 30px;
+  text-align: center;
+  background-color:  #e9ecef;
+  padding: 40px;
+  
+ 
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.kural-number {
+  font-size: 2.8rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.kural-line {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 20px;
+}
+
+.buttons-container button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap; /* Prevents text from wrapping inside buttons */
+}
+
+.buttons-container button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.section h4 {
+  color: #007bff;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .kural-number {
+    font-size: 2.2rem;
+  }
+
+  .kural-line {
+    font-size: 1.6rem;
+  }
+
+  .buttons-container button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .section h4 {
+    font-size: 1.4rem;
+  }
+
+  .section p {
+    font-size: 1.2rem;
+  }
+}
